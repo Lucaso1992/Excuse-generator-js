@@ -27,4 +27,6 @@ window.onload = function() {
   const excuse = myFunction;
   const mainParagraph = document.getElementById("excuse");
   mainParagraph.innerHTML = excuse;
+  
+  myFunction();
 };

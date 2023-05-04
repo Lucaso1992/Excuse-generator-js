@@ -1,5 +1,5 @@
-
-
+// Primer paso: declaro mi funcion
+function myApp() {
 
 let who = ['The dog','My grandma','His turtle','My bird'];
 let action = ['ate','peed','crushed','broke'];
@@ -11,12 +11,11 @@ const actionRandom = action[Math.floor(Math.random() * action.length)];
 const whatRandom = what[Math.floor(Math.random() * what.length)];
 const whenRandom = when[Math.floor(Math.random() * when.length)];
 
-
-
 const onLoad = whoRandom + " " + actionRandom + " " +  whatRandom + " " + whenRandom;
-
-
-
 
 console.log(onLoad)
 
+}
+
+// Segundo Paso: ejecuto mi funcion
+myApp()
