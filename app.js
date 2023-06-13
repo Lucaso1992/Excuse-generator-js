@@ -16,7 +16,7 @@ window.onload = function() {
     "during my lunch",
     "while I was praying"
   ];
-  function myFunction() {
+  function generateRandomExcuse() {
     const whoRandom = who[Math.floor(Math.random() * who.length)];
     const actionRandom = action[Math.floor(Math.random() * action.length)];
     const whatRandom = what[Math.floor(Math.random() * what.length)];
@@ -24,9 +24,9 @@ window.onload = function() {
 
     return whoRandom + " " + actionRandom + " " + whatRandom + " " + whenRandom;
   }
-  const excuse = myFunction;
+  const excuse = generateRandomExcuse();
   const mainParagraph = document.getElementById("excuse");
   mainParagraph.innerHTML = excuse;
   
-  myFunction();
+  generateRandomExcuse();
 };
